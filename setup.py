@@ -67,7 +67,7 @@ setup(name='pharaoh',
       tests_require = tests_require,
       test_suite="pyramid.tests",
       entry_points = """\
-        [pyramid.scaffold]
+        [pharaoh.starter_package]
         sqlalchemy=pharaoh.starter_packages:SqlAlchemyPkg
         [console_scripts]
         pharaoh = pharaoh.scripts.pharaoh:main
