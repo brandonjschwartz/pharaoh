@@ -50,8 +50,3 @@ class PharaohPackage(Package):
 class SqlAlchemyPkg(PharaohPackage):
     _package_dir = 'sqlalchemy'
     summary = 'Sqlalchemy base package.'
-
-
-class Starter(PharaohPackage):
-    _package_dir = 'starter'
-    summary = 'Base starter package.'
