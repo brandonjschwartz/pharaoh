@@ -86,7 +86,7 @@ class PkgCreateCommand(object):
 
     def all_packages(self):
         packages = []
-        eps = list(pkg_resources.iter_entry_points('pyramid.scaffold'))
+        eps = list(pkg_resources.iter_entry_points('pharaoh.starter_packages'))
         for entry in eps:
             try:
                 package_class = entry.load()
