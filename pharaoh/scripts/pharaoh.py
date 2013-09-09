@@ -30,6 +30,14 @@ class PkgCreateCommand(object):
                       dest='simulate',
                       action='store_true',
                       help='Simulate but do no work')
+    parser.add_option('--overwrite',
+                      dest='overwrite',
+                      action='store_true',
+                      help='Always overwrite')
+    parser.add_option('--interactive',
+                      dest='interactive',
+                      action='store_true',
+                      help='When a file would be overwritten, interrogate')
 
     def __init__(self, argv, quiet=False):
         self.quiet = quiet
