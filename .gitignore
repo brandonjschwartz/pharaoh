@@ -34,3 +34,8 @@ nosetests.xml
 .project
 .pydevproject
 .idea
+
+# Temp files
+
+*.gitignore~
+*.md~
